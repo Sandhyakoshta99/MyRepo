@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save</title> 
+    <link rel="stylesheet" href="styles.css">
+     <!-- Links an external CSS file -->
+</head>
+<body>
+     <!-- Main container for the bundle selection -->
+    <div class="bundle-container">
+        <!-- Heading section -->
+        <h2>Bundle & Save</h2> 
+
+        <!-- First bundle option: 1 Pair -->
+        <div class="bundle-option"> 
+            <!-- Radio button for selection-->
+            <input type="radio" name="bundle" id="pair1" value="195" checked> 
+             <!-- Label tag clickable selection -->
+            <label for="pair1" class="bundle-label">
+                <div class="bundle-info"> 
+                    <!-- Quantity information -->
+                    <span>1 Pair</span> 
+                    <span class="price">DKK 195.00</span>
+                    <span class="discount">50% OFF</span> 
+                </div>
+            </label>
+            <!-- Hidden details, shown when selected -->
+            <div class="bundle-details"> 
+                <!-- Size selection -->
+                <label>1 Size: <select><option>S</option><option>M</option><option>L</option></select></label> 
+                <!-- Color selection -->
+                <label>Colour: <select><option>Red</option><option>Blue</option><option>Black</option></select></label> 
+            </div>
+        </div>
+
+        <!-- Second bundle option: 2 Pairs -->
+        <div class="bundle-option">
+            <input type="radio" name="bundle" id="pair2" value="345"> 
+            <label for="pair2" class="bundle-label"> 
+                <div class="bundle-info">
+                    <span>2 Pair</span>
+                    <span class="price">DKK 345.00</span>
+                    <span class="discount">40% OFF</span>
+                </div>
+            </label>
+            <!-- Hidden details for 2 pairs -->
+            <div class="bundle-details"> 
+                <label>1 Size: <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label>Colour: <select><option>Red</option><option>Blue</option><option>Black</option></select></label>
+                <br> <!-- Line break tag -->
+                <label>2 Size: <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label>Colour: <select><option>Red</option><option>Blue</option><option>Black</option></select></label>
+            </div>
+        </div>
+
+        <!-- Third bundle option: 3 Pairs -->
+        <div class="bundle-option">
+            <input type="radio" name="bundle" id="pair3" value="528">
+            <label for="pair3" class="bundle-label">
+                <div class="bundle-info">
+                    <span>3 Pair</span>
+                    <span class="price">DKK 528.00</span>
+                    <span class="discount">60% OFF</span>
+                </div>
+            </label>
+             <!-- Hidden details for 3 pairs -->
+            <div class="bundle-details">
+                <label>1 Size: <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label>Colour: <select><option>Red</option><option>Blue</option><option>Black</option></select></label>
+                <br><label>2 Size: <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label>Colour: <select><option>Red</option><option>Blue</option><option>Black</option></select></label>
+                <br><label>3 Size: <select><option>S</option><option>M</option><option>L</option></select></label>
+                <label>Colour: <select><option>Red</option><option>Blue</option><option>Black</option></select></label>
+            </div>
+        </div>
+        <!-- Displays free shipping information -->
+        <div class="free-shipping">Free 2 Day Shipping</div> 
+        <!-- Displays the selected total price -->
+        <div class="total-price">Total: <span id="total">DKK 195.00</span></div> 
+        <button class="add-to-cart">+ Add to Cart</button> 
+    </div>
+    <!--add external JavaScript file for more functionality -->
+    <script src="script.js"></script> 
+</body>
+</html>
